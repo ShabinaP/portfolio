@@ -19,11 +19,29 @@ html {
     
     
 }
-.title{
-    font-family: 'Lora', serif;
-    font-size: 4rem;
-    color: var(--fire-opal);
-}
+
+.typing-demo{
+        width: 22ch;
+        animation: typing 1s steps(10), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: 'Lora', serif;
+        font-size: 4rem;
+        color: var(--fire-opal);
+      }
+      
+      @keyframes typing {
+        from {
+          width: 0
+        }
+      }
+          
+      @keyframes blink {
+        50% {
+          border-color: transparent
+        }
+      }
 
 .subtitle{
     font-size: 2rem;
@@ -174,3 +192,40 @@ textarea:focus {
   padding: 10px;
   text-align: center;
 }
+
+/*styling for projects page*/
+
+table {
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .projects-title {
+    color: var(--fire-opal);
+    font-size: 3rem;
+    font-family: 'Lora', serif;
+    text-align: center;
+  }
+  .projects-body {
+      background-color: var(--smoky-black);
+      color: white;
+  }
+
+  th {
+    height: 70px;
+    font-weight: 1000;
+  }
+
+  td {
+    text-align: center;
+  }
+  th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd; }
+
+    tr:hover {
+        background-color: var(--fire-opal);
+    }
