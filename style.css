@@ -16,7 +16,7 @@ html {
 .wrapper{
     display: grid;
     grid-template-rows: 800px;
-    grid-template-columns: auto;
+    
     
 }
 .title{
@@ -32,7 +32,7 @@ html {
     
 }
 
-header {
+.index-header {
     background-color: var(--smoky-black);
     padding: 200px;
     box-shadow: var(--shadow);
@@ -81,6 +81,7 @@ max-width: 100%;
 
   }
   .section3 {
+      display: grid;
     border-style: solid;
     border-width: medium;
     border-color: var(--smoky-black);
@@ -93,11 +94,16 @@ max-width: 100%;
     color: var(--smoky-black);
     text-align: center;
 }
-.me-image {
+.about-me {
+    text-align: center;
+}
+/*.me-image {
 display: block;
 float: right;
-  width: 50%;
-}
+max-width:100%;
+height:auto;
+  border-radius: 50%;
+}*/
 
 
   footer {
@@ -109,3 +115,62 @@ float: right;
       font-size: x-small;
 
   }
+
+  /*styling for contacts page*/
+
+  .contact-body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--smoky-black);
+    color: white;
+  }
+
+  .hello-title {
+      color: var(--fire-opal);
+      font-size: 3rem;
+      font-family: 'Lora', serif;
+      text-align: center;
+  }
+
+  input {
+      width: 70%;
+      padding: 12px 20px;
+       margin: 8px 0;
+       border-radius: 6px;
+    
+  }
+
+  input:focus {
+    background-color: var(--fire-opal);
+    outline: none;
+  }
+select {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  margin: 20px;
+}
+
+select:focus {
+    outline: none;
+    background-color: var(--fire-opal);
+}
+
+textarea {
+    resize: none;
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin: 20px;
+}
+textarea:focus {
+    background-color: var(--fire-opal);
+    outline: none;
+}
+
+.contact-form{
+    max-width: 750px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
