@@ -98,7 +98,7 @@ max-width: 100%;
       font-size: 2rem;
 
   }
-  .section3 {
+  /*.section3 {
       display: grid;
     border-style: solid;
     border-width: medium;
@@ -110,18 +110,12 @@ max-width: 100%;
     
     font-size: 3rem;
     color: var(--smoky-black);
-    text-align: center;
-}
+    text-align: center; 
+}*/
+
 .about-me {
     text-align: center;
 }
-/*.me-image {
-display: block;
-float: right;
-max-width:100%;
-height:auto;
-  border-radius: 50%;
-}*/
 
 
   footer {
@@ -134,12 +128,13 @@ height:auto;
 
   }
 
-  /*styling for contacts page*/
+  /*styling for contacts section*/
 
-  .contact-body {
+  #contact-body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--smoky-black);
     color: white;
+    box-shadow: var(--shadow);
   }
 
   .hello-title {
