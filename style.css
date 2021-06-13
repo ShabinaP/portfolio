@@ -16,6 +16,14 @@ html {
 .wrapper{
     display: grid;
     grid-template-rows: 800px;
+    grid-template-columns: auto;
+    grid-template-areas: "header header header header"
+    "about-me about-me about-me about-me"
+    "contact contact contact contact"
+    "footer footer footer footer";
+    
+
+  
     
     
 }
@@ -54,7 +62,7 @@ html {
     background-color: var(--smoky-black);
     padding: 200px;
     box-shadow: var(--shadow);
-
+    grid-area: header;
 }
 
 nav ul{
@@ -84,7 +92,13 @@ a:visited {
 display: grid;
 grid-gap: 5px;
 font-family: 'Roboto', sans-serif;
+grid-area: about-me;
 
+}
+
+.sm-icons {
+  margin-right:auto;
+  margin-left: auto;
 }
 .profileimg {
   max-width: 400px;
@@ -93,6 +107,7 @@ font-family: 'Roboto', sans-serif;
   margin-right:auto;
   margin-left: auto;
   margin-bottom: 5px;
+  box-shadow: var(--shadow);
   
 }
 
@@ -118,6 +133,7 @@ font-family: 'Roboto', sans-serif;
     background-color: var(--smoky-black);
     color: white;
     box-shadow: var(--shadow);
+    grid-area: contact;
   }
 
   .hello-title {
@@ -178,6 +194,7 @@ footer {
   text-align: end;
   font-family: 'Roboto', sans-serif;
   font-size: x-small;
+  grid-area: footer;
 
 }
 
