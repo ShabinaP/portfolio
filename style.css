@@ -78,55 +78,38 @@ a:visited {
       color: var(--fire-opal);
   }
 
+  /*styling for section 2*/
+
 .section2 {
 display: grid;
-grid-gap: 10px;
-justify-content: center;
+grid-gap: 5px;
 font-family: 'Roboto', sans-serif;
 
 }
-.passionimg {
-max-width: 100%;
+.profileimg {
+  max-width: 400px;
   height: auto;
+  display: block;
+  margin-right:auto;
+  margin-left: auto;
+  margin-bottom: 5px;
   
 }
-.passionimg:hover {
-    transform: scaleX(-1);
-  }
+
   .subheading {
       text-align: center;
       font-size: 2rem;
 
   }
-  /*.section3 {
-      display: grid;
-    border-style: solid;
-    border-width: medium;
-    border-color: var(--smoky-black);
-    font-family: 'Roboto', sans-serif;
-
-  }
-.subheading2 {
-    
-    font-size: 3rem;
-    color: var(--smoky-black);
-    text-align: center; 
-}*/
 
 .about-me {
-    text-align: center;
+  text-align: center;
+    width:auto;
+    
 }
 
 
-  footer {
-      padding: 20px;
-      background-color: var(--smoky-black);
-      color: var(--fire-opal);
-      text-align: end;
-      font-family: 'Roboto', sans-serif;
-      font-size: x-small;
 
-  }
 
   /*styling for contacts section*/
 
@@ -186,6 +169,16 @@ textarea:focus {
   margin: auto;
   padding: 10px;
   text-align: center;
+}
+
+footer {
+  padding: 20px;
+  background-color: var(--smoky-black);
+  color: var(--fire-opal);
+  text-align: end;
+  font-family: 'Roboto', sans-serif;
+  font-size: x-small;
+
 }
 
 /*styling for projects page*/
