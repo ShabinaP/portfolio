@@ -2,9 +2,6 @@
 --smoky-black: #0e0906ff;
 --fire-opal: #ea5348ff;
 --ash-gray: #bdbea9ff;
---dark-sea-green: #8db38bff;
---viridian: #56876dff;
---dark-spring-green: #04724dff;
 --shadow: 0 1px 5px #ea5348ff;
 
 }
@@ -16,19 +13,21 @@ html {
 .wrapper{
     display: grid;
     grid-template-rows: 800px;
-    grid-template-columns: auto;
+    /*grid-template-columns: repeat(3,1fr);*/
     grid-template-areas: "header header header header"
     "about-me about-me about-me about-me"
     "contact contact contact contact"
     "footer footer footer footer";
     
-
-  
-    
-    
 }
 
-.typing-demo{
+.title {
+  font-family: 'Lora', serif;
+        font-size: 4rem;
+        color: var(--fire-opal);
+}
+
+.typing{
         width: 22ch;
         animation: typing 1s steps(10), blink .5s step-end infinite alternate;
         white-space: nowrap;
@@ -50,6 +49,7 @@ html {
           border-color: transparent
         }
       }
+      
 
 .subtitle{
     font-size: 2rem;
@@ -65,12 +65,13 @@ html {
     grid-area: header;
 }
 
-nav ul{
+
+nav ul {
     display: grid;
     grid-gap: 20px;
-   position:absolute;
+   /*position:absolute;
     top: 0;
-    right:0;
+    right:0;*/
     padding: 5px;
     margin: 5px;
     font-family: 'Roboto', sans-serif;
@@ -122,8 +123,6 @@ grid-area: about-me;
     width:auto;
     
 }
-
-
 
 
   /*styling for contacts section*/
@@ -234,3 +233,11 @@ table {
     tr:hover {
         background-color: var(--fire-opal);
     }
+
+    @media all and (min-width: 1440px) 
+     {
+      nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }};
