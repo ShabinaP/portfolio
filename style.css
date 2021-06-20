@@ -181,23 +181,28 @@ textarea:focus {
     outline: none;
 }
 
-.contact-form{
+#contact-form{
     max-width: 750px;
   margin: auto;
   padding: 10px;
   text-align: center;
 }
-
-footer {
-  padding: 20px;
-  background-color: var(--smoky-black);
-  color: var(--fire-opal);
-  text-align: end;
-  font-family: 'Roboto', sans-serif;
-  font-size: x-small;
-  grid-area: footer;
-
+.submitbutton, .resetbutton{
+  background-color: var(--fire-opal);
+  border: none;
+  color: var(--smoky-black);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 6px;
 }
+
+
+
+
 
 /*styling for projects page*/
 
@@ -236,6 +241,18 @@ table {
         background-color: var(--fire-opal);
     }
 
+    footer {
+      padding: 20px;
+      background-color: var(--smoky-black);
+      color: var(--fire-opal);
+      text-align: end;
+      font-family: 'Roboto', sans-serif;
+      font-size: x-small;
+      grid-area: footer;
+    
+    }
+
+    /*media queries*/
     @media all and (min-width: 1440px) 
      {
       nav ul {
@@ -243,3 +260,5 @@ table {
         right: 0;
         top: 0;
       }};
+
+

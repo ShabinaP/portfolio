@@ -54,13 +54,13 @@
 <h2 class="hello-title" >Say hello!</h2>
 
     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde quasi fugiat aliquam optio accusantium consectetur cupiditate temporibus vero rerum magnam?
-<form class="contact-form">
+<form id="contact-form">
     <fieldset> <legend> Your Details: </legend>
-        <label for="name" id="name-label">Name:</label><br>
-<input type="text" required id="name" name="name" placeholder="Enter your name">
+        <label for="name" >Name:</label><br>
+<input type="text" id="name-label" required name="name" placeholder="Enter your name">
         <br />
-        <label for="email" id="email-label">Email:</label><br>
-<input type="email" required id="email"  name="email"
+        <label for="email" >Email:</label><br>
+<input type="email" id="email-label" required  name="email"
  placeholder="Enter your email "> 
 
     </fieldset>
@@ -77,7 +77,9 @@
     </select>
     <br />
     <label for="comments"> Please provide further information: </label> <br />
-    <textarea name=“comments-and-requests”> </textarea>
+    <textarea name=“comments-and-requests” id="comments-and-requests"> </textarea> <br />
+    <button type="submit" class="submitbutton"> Submit </button>
+<button type="reset" class="resetbutton" id="reset"> Reset</button>
 </fieldset>
 
 </form>
@@ -86,6 +88,33 @@
 </section>
 
 <footer>Shabina Patel<sup>&copy;</sup> 2021</footer>
+
+
+<script>
+const contact = document.getElementById('contact-form');
+const name = document.getElementById('name-label');
+const email = document.getElementById('email-label');
+const message = document.getElementById('comments-and-requests');
+
+contact.addEventListener('submit', 
+function(event){
+  event.preventDefault();
+  alert(`Hello, your name is ${name.value} and your email address is ${email.value} and your message is ${message.value}`)
+}
+
+);
+//function newFunction() {
+            //document.getElementById("contact-form").reset();
+//const reset = document.getElementById("reset");
+
+//contact.addEventListener('reset',
+//function (event){
+  //event.preventDefault();
+//document.getElementById('reset').reset();
+
+
+
+</script>
 </body>
 </main>
 
