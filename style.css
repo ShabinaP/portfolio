@@ -71,27 +71,23 @@
     grid-area: header;
 }
 
+.cbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 
-nav ul {
-    display: grid;
-    grid-gap: 20px;
-   /*position:absolute;
-    top: 0;
-    right:0;*/
-    padding: 5px;
-    margin: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    color: white;
-  list-style-type: none;
 }
 
-a:visited {
-    color: white;
-  }
-  a:hover{
-      color: var(--aero);
-  }
+.contactsbtn {
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  background: var(--burnished-brown);
+  color: var(--aero);
+  border: var(--grullo)
+  
+}
 
   /*styling for section 2*/
 
@@ -107,14 +103,17 @@ grid-area: about-me;
   color: var(--smoky-black);
   margin-right:120px;
   margin-left: 120px;
+  padding: 20px 10px;
+}
+
+.rightimg {
+  float: right;
 }
 
 .profileimg {
   max-width: 400px;
   height: auto;
   display: block;
-  margin-left: auto;
-  margin-bottom: 5px;
   box-shadow: var(--shadow);
   
 }
