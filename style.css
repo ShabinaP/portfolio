@@ -1,11 +1,11 @@
 :root {
 --smoky-black: #0e0906ff;
---aero: #6cbaefff;
+--aero: #6D98BA;
 --ash-gray: #bdbea9ff;
---shadow: 0 1px 5px var(--aero);
---burnished-brown: #a27c7dff;
---desert-sand: #e6beaeff;
---grullo: #b2967dff;
+--shadow: 0 1px 5px var(--desert-sand);
+--burnished-brown: #B07156;
+--desert-sand:#C17767;
+--grullo: #F8F0DD;
 
 }
 
@@ -29,7 +29,7 @@
 .title {
   font-family: 'Lora', serif;
         font-size: 4rem;
-        color: var(--smoky-black);
+        
 }
 
 .typing{
@@ -41,7 +41,7 @@
         letter-spacing: .12em;
         font-family: 'Lora', serif;
         font-size: 4rem;
-        color: var(--burnished-brown);
+        color: var(--desert-sand);
       }
       
       @keyframes typing {
@@ -60,7 +60,7 @@
 .subtitle{
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
-    color: var(--burnished-brown);
+    color: var(--desert-sand);
     
 }
 
@@ -71,21 +71,23 @@
     grid-area: header;
 }
 
-.cbtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-
+.sm-icons {
+  color: var(--smoky-black);
+display: flex;
+align-items: center;
+justify-content: center;
+ 
+  padding: 20px 10px;
 }
 
 .contactsbtn {
   padding: 10px;
+  margin: 10px;
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
   background: var(--burnished-brown);
-  color: var(--aero);
-  border: var(--grullo)
+  color: var(--smoky-black);
+  border: 2px solid var(--smoky-black)
   
 }
 
@@ -99,12 +101,7 @@ grid-area: about-me;
 
 }
 
-.sm-icons {
-  color: var(--smoky-black);
-  margin-right:120px;
-  margin-left: 120px;
-  padding: 20px 10px;
-}
+
 
 .rightimg {
   float: right;
